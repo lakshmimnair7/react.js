@@ -1,0 +1,13 @@
+{
+    "port":"3000",
+    "env":"dev",
+    "db":{
+        "username":"",
+        "password":"",
+        "host":"",
+        "database":"",
+        "port":"3306",
+        "logging": true
+
+    }
+}
