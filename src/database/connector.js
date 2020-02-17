@@ -19,4 +19,6 @@ const db = new sequelize(
     }
 
 
-);
+)
+
+module.exports =db;

@@ -1,8 +1,17 @@
 const express = require('express');
 const bodyParser =require('body-parser');
+const db= require('./database/connector')
+
 const app = express();
 const port = 3000;
 app.use(bodyParser.json())
+
+
+//db connection
+
+db.authenticate().then(() =>{
+    console.log('DB Connected');
+}).catch((err) => {console.log(err);})
 
 
 // callbacks
