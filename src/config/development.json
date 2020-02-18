@@ -6,7 +6,7 @@
         "password":"root",
         "host":"127.0.0.1",
         "database":"flipdupe",
-        "port":"3306"
-
+        "port":"3306",
+        "logging":true
     }
 }
