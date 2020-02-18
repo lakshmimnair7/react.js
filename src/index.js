@@ -11,6 +11,7 @@ app.use(bodyParser.json())
 
 db.authenticate().then(() =>{
     console.log('DB Connected');
+    require('./database/schemaIntializer')
 }).catch((err) => {console.log(err);})
 
 

@@ -1,7 +1,7 @@
 const db = require("../connector");
 const sequelize =require('sequelize');
 
-const Product = db.define(
+module.exports = db.define(
     "product",
     {
         "name":{

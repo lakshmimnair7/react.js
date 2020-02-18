@@ -1,7 +1,7 @@
 const db = require("../connector");
 const sequelize =require('sequelize');
 
-const Category = db.define(
+module.exports = db.define(
     "Category",
     {
         "name":{

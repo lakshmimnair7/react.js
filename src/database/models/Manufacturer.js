@@ -1,15 +1,14 @@
 const db = require("../connector");
 const sequelize =require('sequelize');
 
-module.exports = db.define(
-    "Properties",
+module.exports =db.define(
+    "Manufacture",
     {
-        "color":{
-            type:sequelize.STRING
+        "name":{
+            type: sequelize.STRING
         },
-        "weight":{
+        "location":{
             type:sequelize.STRING
         }
-
     }
 );
