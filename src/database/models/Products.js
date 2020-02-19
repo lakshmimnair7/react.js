@@ -2,7 +2,7 @@ const db = require("../connector");
 const sequelize =require('sequelize');
 
 module.exports = db.define(
-    "product",
+    "products",
     {
         "name":{
             type: sequelize.STRING

@@ -1,7 +1,7 @@
 const express = require('express')
-const Product = require('./database/models/Product')
+const Products = require('./database/models/Products')
 const router = express.Router();
-const Manufacture= require('./database/models/Manufacturer')
+const Manufacture= require('./database/models/Manufacture')
 
 
 router.get("/",(req,res) => {
@@ -20,7 +20,7 @@ router.post('/',(req,res) => {
             price:req.body.price
         };
         let newManu = req.body.Manufacture;
-        Product.create(newpdt).then(pdt => {
+        Products.create(newpdt).then(pdt => {
             Manufacture.findOne({where:{id:newManu}}).then(resManu => {
                 pdt.setManufactures(resManu)
                 console.log('saved')
@@ -33,3 +33,4 @@ router.post('/',(req,res) => {
     }
      res.json({"status":"executed"});
 })
+module.exports=router;

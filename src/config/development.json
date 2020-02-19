@@ -2,10 +2,10 @@
     "port":"3000",
     "env":"dev",
     "db":{
-        "username":"root",
-        "password":"root",
+        "username":"user1",
+        "password":"password",
         "host":"127.0.0.1",
-        "database":"flipdupe",
+        "database":"ecommerce",
         "port":"3306",
         "logging":true
     }
